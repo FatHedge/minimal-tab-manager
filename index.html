@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Minimal Tab Manager</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f0f13; color: #ccc; line-height: 1.7; padding: 40px 20px; -webkit-font-smoothing: antialiased; }
+        .container { max-width: 640px; margin: 0 auto; }
+        h1 { color: #ebebf0; font-size: 24px; font-weight: 600; margin-bottom: 8px; }
+        .subtitle { color: #666; font-size: 14px; margin-bottom: 40px; }
+        h2 { color: #ebebf0; font-size: 16px; font-weight: 500; margin: 32px 0 12px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        p { margin-bottom: 16px; font-size: 15px; color: #999; }
+        ul { margin: 0 0 16px 20px; }
+        li { margin-bottom: 8px; font-size: 15px; color: #999; }
+        strong { color: #bbb; font-weight: 500; }
+        a { color: #5b9ef0; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .brand { display: flex; align-items: center; gap: 8px; margin-bottom: 32px; }
+        .brand-dot { width: 6px; height: 6px; border-radius: 50%; background: #5b9ef0; }
+        .brand-tag { font-size: 11px; color: #444; padding: 2px 8px; border: 0.5px solid rgba(255,255,255,0.06); border-radius: 6px; }
+        .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.06); font-size: 13px; color: #444; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="brand">
+            <div class="brand-dot"></div>
+            <span style="font-size:14px;color:#ebebf0;font-weight:500">Minimal Tab Manager</span>
+            <span class="brand-tag">Minimal Series</span>
+        </div>
+
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Last updated: May 30, 2026</p>
+
+        <h2>Overview</h2>
+        <p>Minimal Tab Manager is a browser extension that helps you organize tabs into workspaces. We believe in radical transparency: <strong>this extension collects zero data about you.</strong></p>
+
+        <h2>Data Collection</h2>
+        <p><strong>We do not collect, transmit, or store any personal information.</strong> Specifically:</p>
+        <ul>
+            <li>No analytics or telemetry of any kind</li>
+            <li>No tracking pixels, cookies, or fingerprinting</li>
+            <li>No user accounts or authentication</li>
+            <li>No network requests to external servers</li>
+            <li>No browsing history collection</li>
+            <li>No advertisements</li>
+        </ul>
+
+        <h2>Data Storage</h2>
+        <p>All data created by this extension is stored entirely on your device using Chrome's built-in storage APIs:</p>
+        <ul>
+            <li><strong>chrome.storage.local</strong> — Workspaces (name, icon, saved tab URLs/titles) and cleaned tab history. This data never leaves your device.</li>
+            <li><strong>chrome.storage.sync</strong> — UI preferences only (theme, font size, language, cleanup settings). This is synced across your devices through your Google account by Chrome itself. We have no access to this sync process.</li>
+        </ul>
+        <p>You can export all workspace data as a JSON file and delete it at any time through the extension's settings.</p>
+
+        <h2>Permissions</h2>
+        <p>This extension requests the following Chrome permissions, each for a specific functional purpose:</p>
+        <ul>
+            <li><strong>sidePanel</strong> — To render the extension's UI in Chrome's side panel</li>
+            <li><strong>tabs</strong> — To list, create, close, and organize browser tabs</li>
+            <li><strong>tabGroups</strong> — To create and manage Chrome's native tab groups</li>
+            <li><strong>storage</strong> — To save workspaces and user preferences locally</li>
+            <li><strong>alarms</strong> — To run periodic auto-cleanup checks in the background</li>
+        </ul>
+        <p>No permission is used for any purpose other than the extension's core tab management functionality. No data accessed through these permissions is ever transmitted externally.</p>
+
+        <h2>Third-Party Services</h2>
+        <p>This extension uses <strong>no third-party services, libraries, SDKs, or APIs</strong>. All code runs locally in your browser.</p>
+
+        <h2>Import Feature</h2>
+        <p>The import feature reads files you manually select from your device (OneTab .txt exports, Session Buddy .json exports, or our own backup format). These files are processed entirely in your browser and are never uploaded anywhere.</p>
+
+        <h2>Children's Privacy</h2>
+        <p>This extension does not knowingly collect any information from children under the age of 13.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>If we ever update this privacy policy, the changes will be posted on this page with an updated revision date. Given the nature of this extension (zero data collection), we do not anticipate significant changes.</p>
+
+        <h2>Contact</h2>
+        <p>If you have questions about this privacy policy, please open an issue on our <a href="https://github.com/">GitHub repository</a>.</p>
+
+        <div class="footer">
+            <p>Minimal Tab Manager is part of the Minimal Series — tools that do one thing well.</p>
+            <p>© 2026 Minimal Series. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
